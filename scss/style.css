@@ -1,0 +1,361 @@
+* {
+  background-color: #24272C;
+  box-sizing: border-box;
+  -moz-column-break-before: auto;
+       break-before: auto;
+  -moz-column-break-after: auto;
+       break-after: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  * {
+    justify-content: center;
+  }
+}
+nav, .moresection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+
+@media screen and (max-width: 850px) {
+  nav, .moresection {
+    display: none;
+  }
+  .navformobile {
+    display: block;
+  }
+}
+button {
+  box-shadow: 2px 5px 5px 2px rgb(70, 68, 68);
+  height: 50px;
+  margin-top: 15px;
+}
+
+button:active {
+  background-color: #7733FF;
+}
+
+#navicon {
+  color: #7733FF;
+}
+
+#navicon:hover .navbuttonformobile {
+  display: inline;
+  gap: 20px;
+}
+
+.navbuttonformobile {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  .navformobile {
+    display: none;
+  }
+  nav, .moresection {
+    visibility: visible;
+  }
+}
+#contactid, #submit-button, #education-button, #experience-button, #nlpbutton, #contactme, #learnmore, #projectid, #certificateid, .skill-container button, #mlbutton, #pythonbutton, #resumeid, #aboutid {
+  width: 130px;
+  font: bold;
+  font-size: large;
+  border-radius: 20px;
+  border: none;
+}
+
+#resumeid, #aboutid {
+  width: 100px;
+}
+
+#certificateid, .skill-container button, #mlbutton, #pythonbutton {
+  width: 150px;
+}
+
+#firstimage {
+  display: flex;
+  justify-content: center;
+}
+
+#heysection, .professionsection, #namesection {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#namesection {
+  font-size: 50px;
+}
+
+.professionsection {
+  font-size: 40px;
+}
+
+.animation-container {
+  display: inline-block;
+}
+
+.animationsection {
+  animation: writing 4s forwards infinite;
+  overflow: hidden;
+  display: flex;
+  border-right: 0.1em solid red;
+}
+
+@keyframes writing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.aboutmesection {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+  .aboutmesection {
+    display: inline;
+    justify-content: center;
+  }
+}
+.dessection {
+  font-size: larger;
+  text-align: start;
+}
+
+#aboutimg {
+  height: 75%;
+}
+
+.project-container h2 {
+  font-size: xx-large;
+}
+
+meter {
+  width: 100%;
+  aspect-ratio: 10/1;
+  margin-bottom: 50px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #7733FF;
+}
+
+#mlbutton {
+  width: 200px;
+}
+
+.projectbuttons {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+  .projectbuttons {
+    display: flex;
+    gap: 0px;
+  }
+}
+.logo-and-description {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+  .logo-and-description {
+    display: inline;
+    justify-content: center;
+  }
+}
+.productlogos {
+  display: block;
+}
+
+.content-analyzer, .exp1, .edu1, .edu3, .edu2, .exp2, .budget-provision, .technical-content-writer {
+  margin-top: 50px;
+  height: 530px;
+  width: 500px;
+  box-shadow: 2px 5px 5px 2px rgb(70, 68, 68);
+  display: block;
+  justify-items: center;
+}
+
+#content-analyzer-image, #technical-content-image, #budget-provision-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#content-analyzer-h2, .budget-provision h2, .technical-content-writer h2, #content-analyzer-p, .budget-provision p, .technical-content-writer p {
+  text-align: center;
+}
+
+#content-analyzer-p, .budget-provision p, .technical-content-writer p {
+  font-size: larger;
+}
+
+#github {
+  display: flex;
+  justify-content: center;
+}
+
+.technical-content-writer {
+  display: none;
+}
+
+#technical-content-image, #budget-provision-img {
+  height: 60%;
+  width: 80%;
+}
+
+.budget-provision {
+  display: none;
+}
+
+.skill-container h1 {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.lang-framework {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .lang-framework {
+    display: inline;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+}
+#langsummary, #fwsummary {
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  font-size: large;
+  pointer-events: none;
+  background-color: #7733FF;
+}
+
+summary {
+  list-style: none;
+}
+
+.skill-container details menu {
+  display: block;
+}
+.skill-container details li {
+  list-style: none;
+}
+.skill-container details li button {
+  margin-top: 30px;
+}
+
+.certificate-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .certificate-img {
+    display: inline;
+    justify-content: center;
+  }
+}
+#cert-img {
+  height: auto;
+  width: auto;
+  margin-top: 50px;
+}
+
+.exp-edu, .img-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .exp-edu, .img-form {
+    display: inline;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+}
+.experience-container h1 {
+  display: flex;
+  justify-content: end;
+}
+
+#experience-button {
+  background-color: #7733FF;
+  pointer-events: none;
+}
+
+.exp1, .edu1, .edu3, .edu2, .exp2 {
+  height: 250px;
+  width: 300px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#education-button {
+  background-color: #7733FF;
+  pointer-events: none;
+}
+
+.edu1, .edu3, .edu2 {
+  height: 200px;
+}
+
+.img-form {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .img-form {
+    display: inline;
+    justify-content: center;
+  }
+}
+#name, #email {
+  height: 50px;
+  width: 300px;
+}
+
+textarea {
+  height: 150px;
+  width: 500px;
+}
+
+#submit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+  #formimage {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
